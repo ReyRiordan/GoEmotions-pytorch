@@ -1,6 +1,7 @@
 {
     "dataset_reader" : {
         "type": "classification-pt-tsv",
+        "max_tokens": 512
     },
     "train_data_path": "data/original/train.tsv",
     "validation_data_path": "data/original/dev.tsv",
