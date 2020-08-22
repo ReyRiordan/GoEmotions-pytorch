@@ -26,6 +26,7 @@
     },
     "trainer": {
         "optimizer": "adam",
-        "num_epochs": 1
+        "num_epochs": 1,
+        "cuda_device": 0
     }
 }
