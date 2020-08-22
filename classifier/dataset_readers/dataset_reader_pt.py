@@ -63,7 +63,7 @@ class ClassificationPtTsvReader(DatasetReader):
         return Instance(fields)
 
     def _read(self, file_path: str) -> Iterable[Instance]:
-        with open(file_path, 'r') as lines:
+        with open(file_path, 'r', encoding="latin-1") as lines:
             for line in lines:
                 text, sentiment, sentence_id = line.strip().split('\t')
                 sentiment = sentiment.split(',')[0]
