@@ -27,6 +27,7 @@
     "trainer": {
         "optimizer": "adam",
         "num_epochs": 1,
-        "cuda_device": 0
+        "cuda_device": 0,
+        "use_amp": true
     }
 }
