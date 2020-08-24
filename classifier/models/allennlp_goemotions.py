@@ -63,13 +63,13 @@ class SimpleClassifier(Model):
 
     def get_metrics(self, reset: bool = False) -> Dict[str, float]:
         return {"accuracy": self.accuracy.get_metric(reset),
-                "macrof1_precision": self.macrof1.get_metric(reset)["precision"],
-                "macrof1_recall": self.macrof1.get_metric(reset)["recall"],
-                "macrof1_fscore": self.macrof1.get_metric(reset)["fscore"],
-                "microf1_precision": self.microf1.get_metric(reset)["precision"],
-                "microf1_recall": self.microf1.get_metric(reset)["recall"],
-                "microf1_fscore": self.microf1.get_metric(reset)["fscore"],
-                "weightedf1_precision": self.weightedf1.get_metric(reset)["precision"],
-                "weightedf1_recall": self.weightedf1.get_metric(reset)["recall"],
-                "weightedf1_fscore": self.weightedf1.get_metric(reset)["fscore"]
+                "macrof1_precision": self.macrof1.get_metric(reset)["precisions"],
+                "macrof1_recall": self.macrof1.get_metric(reset)["recalls"],
+                "macrof1_fscore": self.macrof1.get_metric(reset)["f1-measures"],
+                "microf1_precision": self.microf1.get_metric(reset)["precisions"],
+                "microf1_recall": self.microf1.get_metric(reset)["recalls"],
+                "microf1_fscore": self.microf1.get_metric(reset)["f1-measures"],
+                "weightedf1_precision": self.weightedf1.get_metric(reset)["precisions"],
+                "weightedf1_recall": self.weightedf1.get_metric(reset)["recalls"],
+                "weightedf1_fscore": self.weightedf1.get_metric(reset)["f1-measures"]
                 }
