@@ -5,8 +5,8 @@
     "dataset_reader" : {
         "type": "classification-pt-tsv",
     },
-    "train_data_path": "test_fixtures/data/train_500.tsv",
-    "validation_data_path": "test_fixtures/data/validation_100.tsv",
+    "train_data_path": "test_fixtures/data/dumb_train.tsv",
+    "validation_data_path": "test_fixtures/data/dumb_validation.tsv",
     "model": {
         "type": "simple_classifier",
         "embedder": {
