@@ -4,7 +4,7 @@ from allennlp.common.util import ensure_list
 
 def test_rey_reader_1(project_root_dir_path, test_fixtures_dir_path, test_log):
 
-    data_file_path = test_fixtures_dir_path / 'data' / 'train_10.tsv'
+    data_file_path = test_fixtures_dir_path / 'data' / 'train_500.tsv'
     reader = ClassificationTsvReader()
     instances = ensure_list(reader.read(str(data_file_path)))
     print(instances)
@@ -16,7 +16,7 @@ def test_rey_reader_1(project_root_dir_path, test_fixtures_dir_path, test_log):
 
 def test_rey_reader_2(project_root_dir_path, test_fixtures_dir_path, test_log):
 
-    data_file_path = test_fixtures_dir_path / 'data' / 'train_10.tsv'
+    data_file_path = test_fixtures_dir_path / 'data' / 'train_500.tsv'
     reader = ClassificationPtTsvReader()
     instances = ensure_list(reader.read(str(data_file_path)))
     print(instances)

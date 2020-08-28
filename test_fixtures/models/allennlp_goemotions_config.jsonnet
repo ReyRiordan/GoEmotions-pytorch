@@ -1,9 +1,12 @@
 {
+    "random_seed": 992020,
+    "numpy_seed": 992020,
+    "pytorch_seed": 992020,
     "dataset_reader" : {
         "type": "classification-pt-tsv",
     },
-    "train_data_path": "test_fixtures/data/train_10.tsv",
-    "validation_data_path": "test_fixtures/data/validation_5.tsv",
+    "train_data_path": "test_fixtures/data/train_500.tsv",
+    "validation_data_path": "test_fixtures/data/validation_100.tsv",
     "model": {
         "type": "simple_classifier",
         "embedder": {

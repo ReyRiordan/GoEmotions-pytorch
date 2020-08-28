@@ -1,4 +1,7 @@
 {
+    "random_seed": 992020,
+    "numpy_seed": 992020,
+    "pytorch_seed": 992020,
     "dataset_reader" : {
         "type": "classification-pt-tsv",
         "max_tokens": 512
@@ -25,7 +28,10 @@
         "shuffle": true
     },
     "trainer": {
-        "optimizer": "adam",
+        "optimizer": {
+            "type": "adam",
+            "lr": 2e-5,
+        }
         "num_epochs": 1,
         "cuda_device": 0,
         "use_amp": true
